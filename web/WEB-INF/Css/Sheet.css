@@ -1,0 +1,15 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 12, 2023, 9:01:58 PM
+    Author     : Windows 10 Pro
+*/
+.myFormat{
+    font-weight: bold;
+    font-size: medium;
+    font-family: arial;
+    color: black;
+    background-color: blue
+}
