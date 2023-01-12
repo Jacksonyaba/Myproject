@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+		<title>Register your company here</title>
+	</h:head>
+	
+	<h:body>
+		
+		<h:form>
+                    <h3> Company Registration </h3>
+			
+			Company name: <h:inputText id="company name" value="#{companyname}" />
+			<br/><br/>
+                        
+                        Phone Number: <h:inputText id="phone number" value="#{phonenumber}" />
+			<br/><br/>
+                        
+		        Email: <h:inputSecret id="email" value="#{email}" />
+			<br/><br/>
+                        
+                        
+                        <h:selectOneMenu value="#{region}">
+                            <f:selectItem itemValue="Oromia" itemLabel="Oromia"/>
+                            <f:selectItem itemValue="Afar" itemLabel="Afar"/>
+                            <f:selectItem itemValue="Gambella" itemLabel="Gambella"/>
+                            <f:selectItem itemValue="Southern Nations" itemLabel="Southern Nations"/>
+                        </h:selectOneMenu>
+                        
+                            Zone: <h:inputSecret id="zone" value="#{zone}" />
+			<br/><br/>
+                        
+                        City: <h:inputSecret id="city" value="#{city}" />
+			<br/><br/>
+                        
+                        <h:selectOneRadio value="#{Companytype}">
+                            <f:selectItem itemValue="bussiness" itemLabel="bussiness"/>
+                            <f:selectItem itemValue="Service Giving" itemLabel="Service Giving"/>
+                            <f:selectItem itemValue="Limited Liability" itemLabel="Limited Liability"/>
+                            <f:selectItem itemValue="General Partnersship" itemLabel="General Partnership"/>
+                             <f:selectItem itemValue="Sole Proprietorship" itemLabel="Sole Proprietorship"/>
+                            
+                        </h:selectOneRadio>
+                        
+                        Application Letter*
+                        (Official application or request letter written by the company/organization/institution addressed to the Nationality,Immigration and Vital events Agency)
+                        
+                        
+                        
+			<h:commandButton value="Register" />
+			
+		</h:form>
+		
+	</h:body>
+
+</html>
