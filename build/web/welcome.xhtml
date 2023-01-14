@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Welcome please register your company</title>
+       
+    </h:head>
+    <h:body>
+        
+        <h:form >
+                    <h3>Welcome please register your company</h3>
+			
+                    <h:outputText value="Company Name: " />
+                    <h:inputText id="companyname" value="#{companyname}"></h:inputText>
+                    <h:message for="companyname"></h:message>
+                    <br></br><br></br>
+                    
+                    <h:outputLabel value="Company Owner*"/>
+                    <br></br><br></br>
+                    
+                     <h:outputText value="First Name: " />
+                    <h:inputText id="firstname" value="#{firstname}"></h:inputText>
+                    <h:message for="firstname"></h:message>
+                    <br></br><br></br>
+                    
+                     <h:outputText value="Last Name: " />
+                    <h:inputText id="lastname" value="#{lastname}"></h:inputText>
+                    <h:message for="Lastname"></h:message>
+                    <br></br><br></br>
+                    
+                    <h:outputText value="Phone Number: " />
+                    <h:inputText id="phonenumber" value="#{phonenumber}"></h:inputText>
+                    <h:message for="phonenumber"></h:message>
+                    <br></br><br></br>
+                   
+                     <h:outputText value="Email: " />
+                    <h:inputText id="email" value="#{email}"></h:inputText>
+                    <h:message for="email"></h:message>
+                    <br></br><br></br>
+                    
+                     <h:outputText value="Address: " />
+                    <h:inputText id="address" value="#{address}"></h:inputText>
+                    <h:message for="address"></h:message>
+                    <br></br><br></br>
+                    
+                     <h:outputLabel value="Region*"/>
+                    <br></br><br></br>
+                    
+                     <h:selectOneMenu value ="Region">
+                        <f:selectItem itemValue ="Amhara"/>
+                         <f:selectItem itemValue ="Oromia"/>
+                          <f:selectItem itemValue ="Afar"/>
+                           <f:selectItem itemValue ="Gambella"/>
+                            <f:selectItem itemValue ="Southern Nations"/>
+                           
+                          </h:selectOneMenu>
+                    <br></br><br></br>
+                    
+                     <h:outputText value="City: " />
+                    <h:inputText id="city" value="#{city}"></h:inputText>
+                    <h:message for="city"></h:message>
+                    <br></br><br></br>
+                
+                    
+                    <h:outputLabel value="Company Type*"/>
+                    <br></br><br></br>
+                    
+                    <h:selectOneMenu value ="typeofcompany">
+                        <f:selectItem itemValue ="Companies Limited by Shares"/>
+                         <f:selectItem itemValue ="Companies Limited by Guarantee."/>
+                          <f:selectItem itemValue ="Unlimited Companies"/>
+                           <f:selectItem itemValue ="One Person Companies (OPC)"/>
+                            <f:selectItem itemValue ="Private Companies"/>
+                             <f:selectItem itemValue ="Public Companies"/>
+                              <f:selectItem itemValue ="Holding and Subsidiary Companies"/>
+                               <f:selectItem itemValue ="Associate Companies"/>
+                            
+                          </h:selectOneMenu>
+                    <br></br><br></br>
+                    
+                    <h:outputLabel value="Application Letter*"/>
+                     <br></br><br></br>
+                    
+                            (Official application or request letter written by the company/organization/institution 
+                            <br></br>
+                                      addressed to the Nationality, Immigration and vital Events Agency).
+                        <br></br><br></br>
+          
+                 <h:inputFile id="file" styleClass="#{file}"></h:inputFile>
+           <br></br><br></br>
+          
+           <h:outputLabel value="Terms and Conditions*"/>
+                     <br></br><br></br>
+                     
+                     1. Company should not register twice.
+                      <br></br>
+                     2. The registered information about company should be correct.
+                      <br></br>
+                     3. The person who registered the company will accept the responsibility for supplying, checking 
+                     <br></br>
+                     and verifying the accuracy and correctness of the information they provide.
+                      <br></br><br></br>
+                      
+                      <h:selectBooleanCheckbox id="termsCheckbox" required="true" requiredMessage="I agree to the terms and conditions stated above">
+                                               
+                      </h:selectBooleanCheckbox>
+                       <br></br><br></br>
+          
+                    
+                    
+                      <h:commandButton value="Register" action="welcome"></h:commandButton>
+                        
+		</h:form>
+    </h:body>
+</html>
