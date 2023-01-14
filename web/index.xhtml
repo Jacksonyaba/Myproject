@@ -7,17 +7,19 @@
 
 	<h:head>
 		<title>Sign in form</title>
-                <link type="text/css" rel="stylesheet" 
-		  href="/WEB-INF/Css/Sheet.css" />
-                
+                <style>
+                   
+                </style>   
 	</h:head>
 	
 	<h:body>
-             <h3>Please sign in to be directed to the registration site</h3>
-             
+          
+             <h3 style="color:green; text-align: center">Please sign in to be directed to the registration site</h3>
+               <div>
 		<h:form id="Login-form">
-                    <h:panelGrid columns="2">
                    
+                    <h:panelGrid columns="2">
+                    
                        <h:outputLabel for="email">Email:
                                   </h:outputLabel>
                     <h:inputText id="email" value= "#{link.email}" required="true" size="30" 
@@ -36,10 +38,14 @@
                    
                     <h:message for="password"></h:message>
                     <br></br>
-                        <h:commandButton value="Sign in" action="HomePage"></h:commandButton>
-                    </h:panelGrid>
+                  
+                    
+                        <h:commandButton value="Sign in" action="HomePage"></h:commandButton> 
+                    
+                      </h:panelGrid>
+                      
 		</h:form>
-            
+             </div>
 	</h:body>
 
 </html>
