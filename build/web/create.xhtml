@@ -59,9 +59,9 @@
                     
                    <h:outputLabel for="Password">Password:
                                   </h:outputLabel>
-                    <h:inputText id="password" value="#{direction.password}" required="true" size="30"
+                    <h:inputSecret id="password" value="#{direction.password}" required="true" size="30"
                                  disabled="#{direction.password}" validator="#{direction.validatePassword}">
-                    </h:inputText>
+                    </h:inputSecret>
                    
                     <h:message for="password"></h:message>
                     <br></br>
